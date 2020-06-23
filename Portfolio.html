@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naim Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel ="icon" href = "icon.png">
+</head>
+<body>
+
+
+
+    <!-- HEADER START -->
+
+    <header>
+       <a href="#home" id = "logo"> <h1>Naim</h1></a>
+        <ul id = "desktop-nav">
+           <li class="nav">
+               <a href="#home" >Home</a>
+            </li>
+           <li class="nav">
+               <a href="#about" >About </a>
+            </li>
+           <li class="nav">
+               <a href="#blog" >BLog</a>
+            </li>
+           <li class="nav">
+               <a href="#contact" >Contact</a>
+            </li>
+        </ul>
+        <i class="fas fa-bars"></i>
+        
+        
+
+    </header>
+    <ul id = "mobile-nav">
+        <li id = testHome class="nav" onlick = "closeMenu()" >
+            <a id = testHome href="#home" >Home</a>
+         </li>
+        <li class="nav" >
+            <a href="#about" onlick = "closeMenu()">About </a>
+         </li>
+        <li class="nav" >
+            <a href="#blog" onlick = "closeMenu()">Blog</a>
+         </li>
+        <li class="nav" >
+            <a href="#contact" onlick = "closeMenu()">Contact</a>
+         </li>
+     </ul>
+
+
+     <a href="https://wa.link/qyg6ox" target="_blank"> <img src="icons8-whatsapp-48.png" alt="" id="whatsapp"></a>
+     <!-- HEADER END -->
+
+     <!-- MAIN START -->
+    <main>
+    
+      <div id="home" class = "section">
+            
+
+            <div id="profile">
+                <div id = text-profile>
+                    <h3>Hello</h3>
+                    <h1>I'm <span id = "myName"></span></h1>
+                    <p id = intro>I'm your friendly neigbourhood <span class = "highlight">Software Engineer </span> 
+                    <a href = "#"><div id ="readmore">Read more</div></a>
+                </div>
+                <div id = img-profile>
+                    <img id = imgMe src="my_photo.jpg" alt="">
+                    <div id="socMed">
+                        <div class = socMed-box>
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class = socMed-box>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class = socMed-box>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class = socMed-box>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class = socMed-box>
+                            <i class="fab fa-pinterest"></i>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+               
+            </div>
+            <a href="#about"><i class=" downBtn fas fa-angle-down"></i></a> 
+     </div> 
+
+     <div id="about" class = "section">
+         <div id="about-inside">
+
+
+            <div id = "aboutMe">
+                <h1>ABOUT ME</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iusto sit natus, neque distinctio sed voluptatem harum velit alias dolore officia repellendus reiciendis. Incidunt excepturi eligendi nobis minima quasi exercitationem?
+                orem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iusto sit natus, neque distinctio sed voluptatem harum velit alias dolore officia repellendus reiciendis. Incidunt excepturi eligendi nobis minima quasi exercitationem?</p>
+
+            </div>  
+
+            <div id="skill">
+
+                <div class="skill-card">
+                    <div class="skill-card-A">
+                        <h1>Front End</h1>
+                        <img class = "icon-skill" src="frontend.png" alt="">
+                    </div>
+                    <div class="skill-card-B">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                     
+
+
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-A">
+                        <h1>Back End</h1>
+                        <img class = "icon-skill" src="backend.JPG" alt="">
+                    </div>
+                    <div class="skill-card-B">
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Django</li>
+                        </ul>
+                    </div>
+                     
+
+
+                </div>
+                <div id = lastcard class="skill-card">
+                    <div class="skill-card-A">
+                        <h1>Data Science</h1>
+                        <img class = "icon-skill" src="datascience.JPG" alt="">
+                    </div>
+                    <div class="skill-card-B">
+                        <ul>
+                            <li>Python</li>
+                            <li>Numpy</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+                     
+
+
+                </div>
+                
+            </div>
+            
+         </div>
+        <a href="#blog"><i class=" downBtn fas fa-angle-down"></i></a> 
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div id="blog" class = "section">
+        <a href="#contact"><i class=" downBtn fas fa-angle-down"></i></a> 
+       
+     </div>
+
+     <div id="contact" class = "section">
+
+     </div>
+    
+
+
+
+    </main>
+
+ 
+
+
+
+     <!-- MAIN END -->
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- HTML / JavaScript Divider -->
+
+     <script >
+
+        var isMenuOpen = false;
+
+        document.getElementsByClassName("fa-bars")[0].addEventListener("click", function(){
+
+            if (isMenuOpen == false) { 
+
+                isMenuOpen = true;
+                document.getElementById("mobile-nav").style.display = "flex";
+                console.log("Menu is OPEN")
+
+
+
+            }
+
+            else if (isMenuOpen == true) { 
+
+                isMenuOpen = false;
+                document.getElementById("mobile-nav").style.display = "none";
+                console.log("Menu is CLOSE")
+
+
+
+            }
+
+    
+        })
+         
+         
+         for (i = 0; i < 4; i ++){
+
+         
+         document.querySelectorAll("ul#mobile-nav li.nav a")[i].addEventListener("click", closing)
+         
+        function closing(){
+
+            isMenuOpen = false;
+            document.getElementById("mobile-nav").style.display = "none";
+           //  console.log("Menu is CLOSED from the inside")
+            
+            
+            
+
+            
+
+
+        }}
+
+        var myName = "NAIM."
+
+        console.log(myName.length)
+
+        //console.log()
+
+        var a = 0;
+
+        setInterval( function() {
+
+            if (a <= myName.length){
+
+            // console.log(myName.substr(0,a))
+
+            document.getElementById("myName").innerHTML = myName.substr(0,a);
+
+
+            a ++;}
+        },500
+
+            
+        )
+
+
+      
+
+
+
+
+
+
+
+
+
+     </script>
+    
+</body>
+</html>
