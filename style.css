@@ -297,13 +297,13 @@ i.downBtn  { position: absolute;
                 left: 50%;
                 bottom: 5px;
                 font-size: 36px;
-                color: white;
-                transform: scale(1);
-                transition: all .5s;
+                color: black;
+                transform: translateX(-50%) scale(1);
+                transition: all .33s;
             }  
             
             
-i.downBtn:hover {transform: scale(1.1); }          
+i.downBtn:hover {transform: translateX(-50%) scale(1.1); }          
 
 div#about {
     background-image: url("aurora.jpg");
@@ -468,7 +468,7 @@ div#project {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-top: 0px; /*change if nessscary*/
+    padding-top: 80px; /*change if nessscary*/
     display:flex;
     justify-content: center;
     align-items: center;
@@ -499,11 +499,31 @@ div.carousel { display : inline-block;
                } 
                 
                 
-#carousel-1{background-image: url(kfc.jpg);}                
-#carousel-2{background-image: url(pizzahut.png); background-position: 0% 50%;}                
-#carousel-3{background-image: url(mcd.jpeg); background-position: 0% 50%;}               
-#carousel-4{background-image: url(burgerking.jpeg);background-position: 0% 50%;}                
-#carousel-5{background-image: url(starbucks.jpg);background-position: 0% 50%;}                
+#carousel-1{background-color: grey;
+                position:relative }               
+#carousel-2{background-image: url(A_desktop.JPG); background-position: 0% 0%;}                
+#carousel-3{background-image: url(B_desktop.JPG); background-position: 0% 0%;}               
+#carousel-4{background-image: url(C_desktop.JPG);background-position: 0% 0%;}                
+#carousel-5{background-image: url(D_desktop.JPG);background-position: 0% 0%;} 
+
+#carousel-1 h1#desktop-click-right { background-color: none;
+                color : white;
+                position: absolute;
+                top : 50%;
+                left : 50%;
+                transform: translateX(-50%) translateY(-50%) ;
+                display: none;}
+
+#carousel-1 div#mobile-click-right { position: absolute;
+                                    top : 50%;
+                                    left : 50%;
+                                    transform: translateX(-50%) translateY(-50%) ;
+                                    display: block;
+                                    z-index: 2;
+                                    color : white;
+                                    width : 400px;
+                                    height: 400px;
+                                  }                
 
 div#project-inside i { position: absolute;
                     top : 50%;
@@ -514,10 +534,12 @@ div#project-inside i { position: absolute;
 
 div#project-inside i.fa-angle-right {right : 50px ;
                                         transform: scale(1);
-                                        color : white}            
+                                        font-size: 64px;
+                                        color : black}            
 div#project-inside i.fa-angle-left { left : 50px;
                                      transform: scale(1);
-                                    color : white;}       
+                                     font-size: 64px;
+                                    color : black;}       
 
 div#project-inside i.fa-angle-right:hover {  transform: scale(1.1);}                                   
 div#project-inside i.fa-angle-left:hover {  transform: scale(1.1);}                                   
@@ -545,7 +567,10 @@ div#pagination-holder ul { list-style: none;
 div#pagination-holder ul li { width : 20px;
                             height: 20px;
                             background-color: black;
-                            border-radius: 50%;}           
+                            border-radius: 50%;}    
+                            
+#pagination-holder ul li.active { background-color: yellow;
+                                transform: scale(1.2);}     
 
 #pagination-holder ul li.active { background-color: yellow;
                                 transform: scale(1.2);}
@@ -600,7 +625,7 @@ div#contact {
                                 opacity: 0.5;
                                 border-radius: 8px;}
 
-#contactForm ul li input:focus { border: none;}
+#contactForm ul li input:focus { outline: none;}
    
 
 
@@ -747,6 +772,16 @@ footer p {color :white;
     div#map500{ display: none;}
 
     footer p { font-size : 8px;}
+
+
+    div#carousel-1 p{ width : 100%;
+                        word-wrap: break-word;
+                        display: block;}
+    
+    div#carousel-2{content: url("A_mobile.JPG");}
+    div#carousel-3{content: url("B_mobile.JPG");}
+    div#carousel-4{content: url("C_mobile.JPG");}
+    div#carousel-5{content: url("D_mobile.JPG");}
                             
 
                 
