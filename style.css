@@ -199,6 +199,7 @@ div#profile { display: flex;
 
 div#text-profile  { background-color: none;
                     height: auto;
+                    width : 100%;
                     display: flex;
                     flex-direction: column; 
                     justify-content: space-between;
@@ -218,7 +219,7 @@ div#text-profile h1 span {font-family: 'Permanent Marker', cursive;
                     
 p#intro { color : white;
             max-width: 600px;
-            min-width: 450px;
+          
             font-size: 32px;
             line-height: 50px;
         text-align: center;}                    
@@ -333,7 +334,7 @@ div#about-inside {
 
 
 div#aboutMe { width : 100%;
-                min-width: 450px;
+                /* min-width: 450px; */
                height: auto;
                 background-color: none;
                 margin:15px auto;
