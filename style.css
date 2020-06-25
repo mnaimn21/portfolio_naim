@@ -183,7 +183,7 @@ div#home { background-image: url("andromeda.jpg");
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding-top: 100px;
+            padding-top: 80px;
             position: relative;
             ;
             
@@ -203,18 +203,20 @@ div#text-profile  { background-color: none;
                     display: flex;
                     flex-direction: column; 
                     justify-content: space-between;
-                    align-items: center;}   
+                    align-items: center;
+                    padding-bottom: 40px}   
 
 div#text-profile h3 { font-size : 36px;
                         color : white;
                         font-weight: bold;}
                     
 div#text-profile h1 span {font-family: 'Permanent Marker', cursive;
-                        font-size: 70px;
+                        font-size: 65px;
                         letter-spacing: 0.5em;
                         text-transform: uppercase;
                         display: inline-block;
                         height: 70px;
+                        width:100%;
                     }          
                     
 p#intro { color : white;
@@ -240,7 +242,7 @@ div#readmore { width : 120px;
                 text-align: center;
                 line-height: 60px;
                 border-radius: 10px;
-                margin: 10px auto 50px auto;
+                /* margin: 10px auto 50px auto; */
                 transition: .33s
                }
 
@@ -255,7 +257,7 @@ div#readmore a, div#readmore:hover a{ color : inherit;
 div#img-profile { text-align: center;}       
 
 div#socMed { margin: 0 auto;
-            margin-top: 20px;
+            margin-top: 10px;
         color: royalblue;
         width: 100%;
         background-color: none;
@@ -366,7 +368,7 @@ div#skill { width : 80%;
             margin-top:0px;
            }   
 
-div.skill-card { width : 350px;
+div.skill-card { width : 320px;
                 height: 500px;
                 background-color: none;
                 border: none; 
@@ -388,7 +390,7 @@ div.skill-card:hover { transform: scale(1.02);
 
                 
 
-div.skill-card-A { width: 350px;
+div.skill-card-A { width: 320px;
                     height: 200px;
                     background-color: none;
                     position: relative;
@@ -400,7 +402,7 @@ div.skill-card-A { width: 350px;
 div.skill-card-A h1 { text-align: center;
                         color:white;
                        }
-div.skill-card-B { width: 350px;
+div.skill-card-B { width: 320px;
                     height: 300px;
                     background-color: white;
                     color : black;
@@ -524,7 +526,9 @@ div.carousel { display : inline-block;
                                     color : white;
                                     width : 400px;
                                     height: 400px;
-                                  }                
+                                  }              
+                                  
+#carousel-1 div#mobile-click-right h1 { width : 320px;}                     
 
 div#project-inside i { position: absolute;
                     top : 50%;
