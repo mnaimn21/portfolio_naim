@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naim Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
@@ -17,7 +18,7 @@
     <!-- HEADER START -->
 
     <header>
-       <a href="#home" id = "logo"> <h1>Naim</h1></a>
+       <a href="#home" id = "logo">Naim</a>
         <ul id = "desktop-nav">
            <li class="nav">
                <a href="#home" >Home</a>
@@ -26,7 +27,7 @@
                <a href="#about" >About </a>
             </li>
            <li class="nav">
-               <a href="#blog" >BLog</a>
+               <a href="#project" >Project</a>
             </li>
            <li class="nav">
                <a href="#contact" >Contact</a>
@@ -45,7 +46,7 @@
             <a href="#about" onlick = "closeMenu()">About </a>
          </li>
         <li class="nav" >
-            <a href="#blog" onlick = "closeMenu()">Blog</a>
+            <a href="#project" onlick = "closeMenu()">Project</a>
          </li>
         <li class="nav" >
             <a href="#contact" onlick = "closeMenu()">Contact</a>
@@ -64,10 +65,11 @@
 
             <div id="profile">
                 <div id = text-profile>
-                    <h3>Hello</h3>
-                    <h1>I'm <span id = "myName"></span></h1>
+                    <h3>Hello there !  </h3>
+                    <h3>I am </h3>
+                    <h1><span id = "myName"></span></h1>
                     <p id = intro>I'm your friendly neigbourhood <span class = "highlight">Software Engineer </span> 
-                    <a href = "#"><div id ="readmore">Read more</div></a>
+                    <a href = "#about"><div id ="readmore">Read more</div></a>
                 </div>
                 <div id = img-profile>
                     <img id = imgMe src="my_photo.jpg" alt="">
@@ -102,56 +104,49 @@
 
             <div id = "aboutMe">
                 <h1>ABOUT ME</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iusto sit natus, neque distinctio sed voluptatem harum velit alias dolore officia repellendus reiciendis. Incidunt excepturi eligendi nobis minima quasi exercitationem?
-                orem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iusto sit natus, neque distinctio sed voluptatem harum velit alias dolore officia repellendus reiciendis. Incidunt excepturi eligendi nobis minima quasi exercitationem?</p>
+                <p>I'm NAIM. I'm your friendly neigbourhood Software Engineer. I am based in Invoke Space, in Sungai Besi, Kuala Lumpur. As a Software Engineer, I use my skills and expertise to help web agencies, companies, startups and individuals to create a blueprint for their digital business. My area of expertise includes Front Ends Development, Back End Development and Data Science</p>
 
             </div>  
 
             <div id="skill">
 
                 <div class="skill-card">
-                    <div class="skill-card-A">
+                    <div id =skill-card-A-1 class="skill-card-A">
                         <h1>Front End</h1>
                         <img class = "icon-skill" src="frontend.png" alt="">
                     </div>
                     <div class="skill-card-B">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, dolore ratione! Quis dolorem error vitae eius est, voluptatem ipsam officia tempore facere voluptas deleniti neque sint esse praesentium nesciunt amet.</p>
+
+                        <small>Learn more</small>
                     </div>
                      
 
 
                 </div>
                 <div class="skill-card">
-                    <div class="skill-card-A">
+                    <div id =skill-card-A-2 class="skill-card-A">
                         <h1>Back End</h1>
                         <img class = "icon-skill" src="backend.JPG" alt="">
                     </div>
                     <div class="skill-card-B">
-                        <ul>
-                            <li>PHP</li>
-                            <li>Laravel</li>
-                            <li>Django</li>
-                        </ul>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, dolore ratione! Quis dolorem error vitae eius est, voluptatem ipsam officia tempore facere voluptas deleniti neque sint esse praesentium nesciunt amet.</p>
+                        
+                        <small>Learn more</small>
                     </div>
                      
 
 
                 </div>
                 <div id = lastcard class="skill-card">
-                    <div class="skill-card-A">
+                    <div id =skill-card-A-3 class="skill-card-A">
                         <h1>Data Science</h1>
                         <img class = "icon-skill" src="datascience.JPG" alt="">
                     </div>
                     <div class="skill-card-B">
-                        <ul>
-                            <li>Python</li>
-                            <li>Numpy</li>
-                            <li>Pandas</li>
-                        </ul>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, dolore ratione! Quis dolorem error vitae eius est, voluptatem ipsam officia tempore facere voluptas deleniti neque sint esse praesentium nesciunt amet.</p>
+                        
+                        <small>Learn more</small>
                     </div>
                      
 
@@ -161,46 +156,94 @@
             </div>
             
          </div>
-        <a href="#blog"><i class=" downBtn fas fa-angle-down"></i></a> 
+        <a href="#project"><i class=" downBtn fas fa-angle-down"></i></a> 
      </div>
 
 
+     <div id="project" class = "section">
+
+        <div id="project-inside">
+            <i id = rightBtn class="fas fa-angle-right" onclick = "moveRight()"></i>
+
+            <i id = leftBtn class="fas fa-angle-left" onclick = "moveLeft()"></i>
 
 
+            <div id="slider">
+               
+               <div id = carousel-1 class="carousel"></div><!--
+            --><div id = carousel-2 class="carousel"></div><!--
+            --><div id = carousel-3 class="carousel"></div><!--
+            --><div id = carousel-4 class="carousel"></div><!--
+            --><div id = carousel-5 class="carousel"></div>
+            </div>
 
+            <div id="pagination-holder">
+                <ul>
+                    <li id = dot1 onlick = "moveSlider(0)"></li>
+                    <li id = dot2 onlick = "moveSlider(-100)"></li>
+                    <li id = dot3 onlick = "moveSlider(-200)"></li>
+                    <li id = dot4 onlick = "moveSlider(-300)"></li>
+                    <li id = dot5 onlick = "moveSlider(-400)"></li>
+                </ul>
+            </div>
 
+        </div>
 
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <div id="blog" class = "section">
+       
         <a href="#contact"><i class=" downBtn fas fa-angle-down"></i></a> 
        
      </div>
 
      <div id="contact" class = "section">
+        <div id="contact-box">
+            <form id = contactForm action="process.php" method="GET">
+                <h1>Get in Touch !</h1>
+                <h3>Lets work together to built an awesome website !</h3>
+                <ul>
+                    <li>
+                        <input type="text" placeholder="Your Name" size = 40 required>
+                        <i class="fas fa-user-alt"></i>
+                    </li>
+                    <li>
+                        <input type="tel" placeholder="Your Phone Number" size = 40 required>
+                        <i class="fas fa-phone"></i>
+                    </li>
+                    <li>
+                        <input type="email" placeholder="Your Email Address" size = 40 required> 
+                        <i class="fas fa-envelope"></i>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Your Company Name (optional)" size = 40 >
+                        <i class="fas fa-building"></i>
+                    </li>
+                    <li>
+                        <textarea name="" id="" cols="47.8" rows="10" placeholder = "Type your message here" required></textarea>
+                    </li>
+                    <li id = "Btn">
+                        <input type="submit">
+                        <input type="reset">
+                    </li>
+                </ul>
+                
+                <a href="#home"> <i class="fas fa-arrow-circle-up"></i></a>
+                
+            </form>
+        </div>
+
+        <div id="mapBox">
+            <h1>Lets Meet Up !</h1>
+            <h3>Visit me at my workstation to see my other projects</h3>
+
+            <div class="mapouter1" id = "map350"><div class="gmap_canvas1"><iframe width="350"  height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=invoke%20malaysia& t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"     marginwidth="0"></iframe></div><style>.mapouter1{position:relative;text-align:right;    height:350px;width:350px;}.gmap_canvas1 {overflow:hidden;background:none!important; height:350px;width:350px;}</style></div>
+            
+            <div class="mapouter" id = "map500"><div class="gmap_canvas"><iframe width="500"    height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=invoke%20malaysia&   t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"   marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;   height:550px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important; height:500px;width:500px;}</style></div>
+        
+        </div>
+
+       
+
 
      </div>
     
@@ -214,10 +257,15 @@
 
 
      <!-- MAIN END -->
+     <!-- FOOTER START -->
 
 
 
+    <footer>
+        <p>&#169  2020 Muhammad Naim Bin Nasaruddin. Trademarks and brands are the property of the owner.</p>
+    </footer>
 
+    <!-- FOOTER ENDS -->
 
 
 
@@ -277,7 +325,7 @@
 
         }}
 
-        var myName = "NAIM."
+        var myName = "NAIM"
 
         console.log(myName.length)
 
@@ -301,7 +349,75 @@
         )
 
 
-      
+
+
+
+        // Carousel script
+
+
+        var xPos = 0;
+
+        function moveRight(){
+
+
+            if (xPos > -400){
+
+            xPos -= 100;
+            console.log(xPos)
+            document.getElementById("slider").style.transform = `translate( ${xPos}%, 0)`
+
+
+            }
+
+            else {
+
+                xPos = 0
+                console.log(xPos)
+                document.getElementById("slider").style.transform = `translate( ${xPos}%, 0)`
+
+
+            }
+
+
+
+        }
+
+        function moveLeft(){
+
+
+        if (xPos < 0){
+
+        xPos += 100;
+        console.log(xPos)
+        document.getElementById("slider").style.transform = `translate( ${xPos}%, 0)`
+
+
+            }
+
+        else {
+
+            xPos = -400;
+                console.log(xPos);
+                document.getElementById("slider").style.transform = `translate( ${xPos}%, 0)`;
+        }
+
+        
+
+
+
+}
+
+
+        function moveSlider() { 
+
+
+
+
+
+
+            
+        }
+        
 
 
 
