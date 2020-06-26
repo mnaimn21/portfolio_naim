@@ -144,7 +144,7 @@
                         <img class = "icon-skill" src="datascience.JPG" alt="">
                     </div>
                     <div class="skill-card-B">
-                        <p>I use data science, especially machine learning, to increase sales using customer data. The benefit of machine learning business applications is that it can automate tedious tasks like compiling data, organizing information and reporting trends</p>
+                        <p>I use data science, especially machine learning, to increase sales using customer data. The benefit of machine learning business applications is that it can automate tedious tasks like compiling data and reporting trends</p>
                         
                         <small>Learn more</small>
                     </div>
@@ -184,15 +184,15 @@
             --><div id = carousel-5 class="carousel"></div>
             </div>
 
-            <div id="pagination-holder">
+             <div id="pagination-holder">
                 <ul>
-                    <li id = dot1 onlick = "moveSlider(0)"></li>
-                    <li id = dot2 onlick = "moveSlider(-100)"></li>
-                    <li id = dot3 onlick = "moveSlider(-200)"></li>
-                    <li id = dot4 onlick = "moveSlider(-300)"></li>
-                    <li id = dot5 onlick = "moveSlider(-400)"></li>
+                    <li id = dot1 onclick = "moveSlider(0)" class = "active"></li>
+                    <li id = dot2 onclick = "moveSlider(-100)"></li>
+                    <li id = dot3 onclick = "moveSlider(-200)"></li>
+                    <li id = dot4 onclick = "moveSlider(-300)"></li>
+                    <li id = dot5 onclick = "moveSlider(-400)"></li>
                 </ul>
-            </div>
+            </div> 
 
         </div>
 
@@ -251,7 +251,7 @@
             <!-- <div class="mapouter" id = "map500"><div class="gmap_canvas"><iframe width="500"    height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=invoke%20malaysia&   t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"   marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;   height:550px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important; height:500px;width:500px;}</style></div> -->
 
 
-            <div class="mapouter"  id = "map500"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=invoke%20space&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">google map embed code generator</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div>
+            <div class="mapouter"  id = "map500"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=invoke%20space&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">google map embed code generator</a></div><style>.mapouter{position:relative;text-align:right;height:550px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div>
         
         </div>
 
@@ -390,6 +390,19 @@
 
 
             }
+            
+            
+            var li = document.querySelectorAll("#pagination-holder li");
+                for (i=0; i < li.length; i++) {
+                    li[i].className = "";
+                }
+            
+            
+                if (xPos === 0) {document.getElementById("dot1").className = "active";}
+                else if (xPos === -100) {document.getElementById("dot2").className = "active";}
+                else if (xPos === -200) {document.getElementById("dot3").className = "active";}
+                else if (xPos === -300) {document.getElementById("dot4").className = "active";}
+                else if (xPos === -400) {document.getElementById("dot5").className = "active";}
 
 
 
@@ -413,70 +426,92 @@
                 console.log(xPos);
                 document.getElementById("slider").style.transform = `translate( ${xPos}%, 0)`;
         }
+            
+            var li = document.querySelectorAll("#pagination-holder li");
+                for (i=0; i < li.length; i++) {
+                    li[i].className = "";
+                }
+            
+            
+                if (xPos === 0) {document.getElementById("dot1").className = "active";}
+                else if (xPos === -100) {document.getElementById("dot2").className = "active";}
+                else if (xPos === -200) {document.getElementById("dot3").className = "active";}
+                else if (xPos === -300) {document.getElementById("dot4").className = "active";}
+                else if (xPos === -400) {document.getElementById("dot5").className = "active";}
 
-        
 
-
-
-}
-
-
-//         function moveSlider() { 
-
-
-//             var li = document.querySelectorAll("li")
-
-//             for (var i = 0; i < li.length; i++){
-
-//             console.log(i);
-//             li[i].className = " ";
-
-//             }
+        }
+            
+            
 
 
 
 
-//             var target = event.srcElement.id;
-//             document.getElementById(target).className = "active";
-//             document.getElementById("slider").style.transform = "translate( " + x + "%, 0)";
+          function moveSlider(x){ 
 
-//                  if (x == 0){
+                var li = document.querySelectorAll("li")
 
-//                      li[0].className == "active"
-//                      document.getElementById("slider").style.transform = "translate( " + 0 + "%, 0)";
+                for (var i = 0; i < li.length; i++){
+
+                    console.log(i);
+                    li[i].className = " ";
+
+                }
 
 
-//                  }
+                
+
+                var target = event.srcElement.id;
+                document.getElementById(target).className = "active";
+                document.getElementById("slider").style.transform = "translate( " + x + "%, 0)";
+                
+                    if (x === 0){
+
+                        li[0].className == "active"
+                        document.getElementById("slider").style.transform = "translate( " + 0 + "%, 0)";
+
+
+                    }
+                
+                    else if (x === -100){
+                        li[1].className == "active"
+                        document.getElementById("slider").style.transform = "translate( " + -100 + "%, 0)";
+
+
+                    }
+                
+                    else if (x === -200){
+
+                        li[2].className == "active"
+                        document.getElementById("slider").style.transform = "translate( " + -200 + "%, 0)";
+                        
+
+                    }
+                
+                    else if (x === -300){
+                        li[3].className == "active"
+                        document.getElementById("slider").style.transform = "translate( " + -300 + "%, 0)";
+
+
+                    }else if (x === -400){
+                        li[4].className == "active"
+                        document.getElementById("slider").style.transform = "translate( " + -400 + "%, 0)";
+
+
+                    }
+                
+                
+                
+                
+                }
              
-//                  else if (x == -100){
-//                      li[1].className == "active"
-//                      document.getElementById("slider").style.transform = "translate( " + -100 + "%, 0)";
-
-
-//                  }
-             
-//                  else if (x == -200){
-
-//                      li[2].className == "active"
-//                      document.getElementById("slider").style.transform = "translate( " + -200 + "%, 0)";
-
-
-//                  }
-             
-//                  else if (x == -300){
-//                      li[2].className == "active"
-//                      document.getElementById("slider").style.transform = "translate( " + -300 + "%, 0)";
-
-
-//                  }
              
              
              
-             
-// }               
+                
 
 
-
+         
 
  
 

@@ -200,6 +200,7 @@ div#profile { display: flex;
 div#text-profile  { background-color: none;
                     height: auto;
                     width : 100%;
+                    max-width:300px;
                     display: flex;
                     flex-direction: column; 
                     justify-content: space-between;
@@ -254,7 +255,8 @@ div#readmore a, div#readmore:hover a{ color : inherit;
                 text-decoration: none;}
 
 
-div#img-profile { text-align: center;}       
+div#img-profile { text-align: center;
+                    background-color: none;}       
 
 div#socMed { margin: 0 auto;
             margin-top: 10px;
@@ -309,7 +311,7 @@ i.downBtn  { position: absolute;
 i.downBtn:hover {transform: translateX(-50%) scale(1.1); }          
 
 div#about {
-    background-image: url("aurora.jpg");
+    background-image: url("orion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 0%;
@@ -467,7 +469,7 @@ div.skill-card:hover .skill-card-B { padding-top : 10px}
 
 
 div#project {
-    background-image: url(orion.jpg);
+    background-image: url(milkyway.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -485,7 +487,7 @@ div#project-inside { width : 100%;
                    }
 
 
-div#slider {  background-color: white;
+div#slider {  background-color: none;
         width : 100%;
         height: 100%;
     opacity: 1; 
@@ -502,7 +504,8 @@ div.carousel { display : inline-block;
                } 
                 
                 
-#carousel-1{background-color: grey;
+#carousel-1{background-image: none;
+            opacity: 0s;
                 position:relative }               
 #carousel-2{background-image: url(A_desktop.JPG); background-position: 0% 0%;}                
 #carousel-3{background-image: url(B_desktop.JPG); background-position: 0% 0%;}               
@@ -515,13 +518,13 @@ div.carousel { display : inline-block;
                 top : 50%;
                 left : 50%;
                 transform: translateX(-50%) translateY(-50%) ;
-                display: none;}
+                display: block;}
 
 #carousel-1 div#mobile-click-right { position: absolute;
                                     top : 50%;
                                     left : 50%;
                                     transform: translateX(-50%) translateY(-50%) ;
-                                    display: block;
+                                    display: none;
                                     z-index: 2;
                                     color : white;
                                     width : 400px;
@@ -577,8 +580,6 @@ div#pagination-holder ul li { width : 20px;
 #pagination-holder ul li.active { background-color: yellow;
                                 transform: scale(1.2);}     
 
-#pagination-holder ul li.active { background-color: yellow;
-                                transform: scale(1.2);}
 
 div#contact {
     background-image: url("shootingstar.jpg");
@@ -702,6 +703,7 @@ i.fa-arrow-circle-up { position: absolute;
                 display: block;}
 
     
+
                         
 
 
@@ -787,6 +789,10 @@ footer p {color :white;
     div#carousel-3{content: url("B_mobile.JPG");}
     div#carousel-4{content: url("C_mobile.JPG");}
     div#carousel-5{content: url("D_mobile.JPG");}
+
+
+    div#carousel-1 h1#desktop-click-right { display:none}
+    div#carousel-1 div#mobile-click-right { display: block;}
                             
 
                 
